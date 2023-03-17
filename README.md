@@ -1,4 +1,4 @@
-# Encryption-with-AES-128-CBC
+# Rijndael Cypher
 Encrypt and decrypt data with AES implementation in python.
 
 

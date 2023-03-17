@@ -1,9 +1,9 @@
 # Rijndael Block Cypher
 Encrypt and decrypt data with AES-128 implementation in python.
 
-<br/>
+<br />
 Introduction
-<br/>
+<br />
 The Advanced Encryption Standard (AES) established in National Institute of Standards (2001) includes specific bit length variants of the Rijndael block cypher. Here, a python implementation of this method accurately models what is today the modern standard of encryption in use by the U.S. government (Smid 2021).
 
 <br/>

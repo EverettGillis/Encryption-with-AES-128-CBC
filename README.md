@@ -1,7 +1,5 @@
 # Rijndael Block Cypher
-Visualize encryption with AES-128 implementation in python.
 
-\
 **Introduction**
 \
 \
@@ -35,7 +33,9 @@ Detailed mathematical preliminaries and other specifications may be found in NIS
 \
 ```AES_program_manager.py``` is the interface through which both encryption and decryption files are run. Required packages: Tkinter.
 
-This implementation is designed to illustrate the process of encryption in real time, not to perform it quickly and securely. Encryption in professional use is performed in strategic isolation where it is time efficient and less vulnerable to sidechannel attacks.
+```algorithm_validation.pdf``` demonstrates the efficacy of the implementation in accurately and reliably encrypting and decrypting data.
+
+This implementation is designed to illustrate the process of encryption in real time, not to perform it quickly and securely. Encryption in professional use is performed in isolation where it is time efficient and less vulnerable to timing and sidechannel attacks.
 
 \
 **Citations**

@@ -320,17 +320,6 @@ class App:
         author_label["justify"] = "center"
         author_label["text"] = "Everett Gillis 2023"
         author_label.place(x=0,y=470,width=116,height=30)
-
-##        text_box_message=tk.Entry(root)
-##        text_box_message["borderwidth"] = "1px"
-##        ft = tkFont.Font(family='Times',size=10)
-##        text_box_message["font"] = ft
-##        text_box_message["fg"] = "#333333"
-##        text_box_message["justify"] = "left"
-##        text_box_message["text"] = "Encrypt plaintext or decrypt hexadecimal text."
-##        text_box_message.place(x=90,y=190,width=490,height=32)
-##        global user_text
-##        user_text = text_box_message.get() # get user input from text box
         
         text_label=tk.Label(root)
         ft = tkFont.Font(family='Times',size=13)
@@ -347,28 +336,6 @@ class App:
         key_label["justify"] = "right"
         key_label["text"] = "KEY:"
         key_label.place(x=0,y=250,width=80,height=32)
-
-##        key_box_label=tk.Entry(root, textvariable=user_key)
-##        key_box_label["borderwidth"] = "1px"
-##        ft = tkFont.Font(family='Times',size=10)
-##        key_box_label["font"] = ft
-##        key_box_label["fg"] = "#333333"
-##        key_box_label["justify"] = "left"
-##        key_box_label["text"] = "Hexadecimal initialization vector (IV) or access key."
-##        key_box_label.place(x=90,y=250,width=405,height=32)
-
-##        showsteps_button=tk.Checkbutton(root)
-##        ft = tkFont.Font(family='Times',size=10)
-##        showsteps_button["font"] = ft
-##        showsteps_button["fg"] = "#333333"
-##        showsteps_button["justify"] = "center"
-##        showsteps_button["text"] = "Show steps"
-##        showsteps_button["relief"] = "flat"
-##        showsteps_button.place(x=250,y=314,width=100,height=42)
-##        showsteps_button["variable"] = misc_arg
-##        showsteps_button["offvalue"] = 0
-##        showsteps_button["onvalue"] = 1
-##        showsteps_button["command"] = self.showsteps_button_command
 
         rand_button=tk.Button(root)
         rand_button["bg"] = "#e9e9ed"
@@ -395,44 +362,7 @@ class App:
         key_out_label["justify"] = "right"
         key_out_label["text"] = "KEY OUT:"
         key_out_label.place(x=0,y=430,width=80,height=32)
-
-##        user_text_out = ''
-##        text_out_box_label=tk.Entry(root, textvariable=user_text_out)
-##        ft = tkFont.Font(family='Times',size=10)
-##        text_out_box_label["font"] = ft
-##        text_out_box_label["fg"] = "#333333"
-##        text_out_box_label["justify"] = "left"
-##        text_out_box_label["text"] = "Resultant text here."
-##        text_out_box_label.place(x=90,y=380,width=490,height=32)
-
-##        user_key_out = ''
-##        key_out_box_label=tk.Entry(root, textvariable=user_key_out)
-##        ft = tkFont.Font(family='Times',size=10)
-##        key_out_box_label["font"] = ft
-##        key_out_box_label["fg"] = "#333333"
-##        key_out_box_label["justify"] = "left"
-##        key_out_box_label["text"] = "Resultant access key or IV here."
-##        key_out_box_label.place(x=90,y=430,width=490,height=32)
-
-
-##    # minor functions
-##    def on_entry_click(event):
-##    # function that gets called whenever entry is clicked
-##        if entry.get() == 'Enter your user name...':
-##           entry.delete(0, "end") # delete all the text in the entry
-##           entry.insert(0, '') #Insert blank for user input
-##           entry.config(fg = 'black')
-##    def on_focusout(event):
-##        if entry.get() == '':
-##            entry.insert(0, 'Enter your username...')
-##            entry.config(fg = 'grey')
-
-    # major functions
-##    def showsteps_button_command(self):
-##        print("command")
-##        print(BooleanVar())
-
-
+        
     def rand_button_command(self):
 ##        print("command")
 ##        print('RANDOM PASS:', RNG(16))

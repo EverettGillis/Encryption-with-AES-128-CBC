@@ -62,10 +62,6 @@ class AES128: # need to change what functions take as inputs
         return decrypted_tuple
 
 
-
-
-
-
 #                                       <<< INPUT >>>
 def init(mode, misc_arg, PLAINTEXT, IV, CIPHERTEXT, KEY):
     #mode = 'decrypt' # 'encrypt'/'decrypt'
@@ -515,32 +511,3 @@ if __name__ == "__main__":
 
               
     root.mainloop()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

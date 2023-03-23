@@ -3,7 +3,7 @@
 **Introduction**
 \
 \
-The Advanced Encryption Standard (AES) established in FIPS 197 includes specific bit length variants of the Rijndael block cypher (National Institute of Standards and Technology 2001). Here, a python implementation of this method uses ~1500 lines of code to accurately model what is today the standard of encryption in use by the U.S. government (Smid 2021).
+The Advanced Encryption Standard (AES) established in FIPS 197 includes specific bit length variants of the Rijndael block cypher (NIST 2001). Here, a python implementation of this method uses ~1500 lines of code to accurately model what is today the standard of encryption in use by the U.S. government (Smid 2021).
 
 \
 **Algorithm Overview**

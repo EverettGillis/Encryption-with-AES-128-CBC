@@ -1,5 +1,11 @@
 # Rijndael Block Cypher
 
+**About**
+\
+\
+Visualize encryption with AES implementation in python. 
+
+\
 **Introduction**
 \
 \

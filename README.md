@@ -37,7 +37,7 @@ Detailed mathematical preliminaries and other specifications may be found in NIS
 **Operation and Intended Use**
 \
 \
-```AES_program_manager.py``` is the interface through which both encryption and decryption files are run. Save all three files to the same folder. Required: Python 3.10, NumPy 1.22.3, Tkinter 0.1.0.
+```AES_program_manager.py``` is the interface through which both encryption and decryption files are run. Save all three files to the same folder. Required: Python 3.10, numpy 1.22.3, tkinter 0.1.0.
 
 ```algorithm_validation.pdf``` demonstrates the efficacy of the implementation in accurately and reliably encrypting and decrypting data.
 

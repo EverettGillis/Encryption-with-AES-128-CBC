@@ -15,21 +15,21 @@ The Advanced Encryption Standard (AES) established in FIPS 197 includes specific
 **Algorithm Overview**
 \
 \
-On a high level, AES-128 takes two-dimensional cyphertext and cypherkey arrays of $Nb=4$ rows of 32 bits. Cyphertext constituting the **state** is combined with the cypherkey before subsequent rounds of substitution and permutation scramble the state and key expansion extends the length of the cypherkey. Each of $Nr=10$ rounds generally sees the same procedures performed on the state:
+On a high level, AES-128 takes two-dimensional cyphertext and cypherkey arrays of $Nb=4$ rows of 32 bits. Cyphertext constituting the **state** matrix is combined with the cypherkey before subsequent rounds of substitution and permutation scramble the state and key expansion extends the length of the cypherkey. With some exception, each of $Nr=10$ rounds sees the same procedures performed on the state:
 
 - SubBytes (substitution):\
-Bytes of the state are mapped by function or lookup to values of the ```S_box```.
+Bytes of the state are mapped to values of the ```S_box```.
 
 - ShiftRows (permutation):\
-Performs a cyclic shift of the elements in each row of the state by increasing intervals.
+Elements in each row of the state are cycled by increasing intervals.
 
 - MixColumns (permutation):\
-Each state column constituting a **word** of 32 bits is multiplied with a constant vector. A finite field $GF(2^{8})$ restricts the number of elements produced in this multiplication, which is necessary to maintain the magnitdue of information in the state.
+The polynomial of each 32-bit **word** of the state is multiplied by an irreducible polynomial under the Galois field $GF(2^{8})$.
 
 - AddRoundKey:\
-XORs the state with the last block of the key schedule, a product of key expansion.
+The state is XOR'ed with the last block of the key schedule generated in key expansion.
 
-The inverse cypher sees the above operations generally performed in reverse order, with the constant vector in MixColumns being the inverse matrix of that used in encryption. In cypher block chaining (CBC), blocks of data are procedurally encrypted to generate cypherkeys for subsequent block encryption, and the inverse is performed in decryption.
+The inverse cypher sees the above operations generally performed in reverse order, with the ```S_box``` in SubBytes and the primitive matrix in MixColumns being the inverses of those used in encryption. In cypher block chaining (CBC), blocks of data are procedurally encrypted to generate cypherkeys for subsequent block encryption, and the inverse is performed in decryption.
 
 Detailed mathematical preliminaries and other specifications may be found in NIST (2001) and Wikipedia (2023).
 

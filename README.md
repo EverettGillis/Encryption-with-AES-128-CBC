@@ -18,7 +18,7 @@ The Advanced Encryption Standard (AES) established in FIPS 197 includes specific
 On a high level, AES-128 takes two-dimensional cyphertext and cypherkey arrays of $Nb=4$ rows of 32 bits. Cyphertext constituting the **state** is combined with the cypherkey before subsequent rounds of substitution and permutation scramble the state and key expansion extends the length of the cypherkey. Each of $Nr=10$ rounds generally sees the same procedures performed on the state:
 
 - SubBytes (substitution):\
-Bytes of the state are mapped to values according to a mathematical function. These values are more simply determined with a lookup table (```S_box```).
+Bytes of the state are mapped by function or lookup to values of the ```S_box```.
 
 - ShiftRows (permutation):\
 Performs a cyclic shift of the elements in each row of the state by increasing intervals.
@@ -29,7 +29,7 @@ Each state column constituting a **word** of 32 bits is multiplied with a consta
 - AddRoundKey:\
 XORs the state with the last block of the key schedule, a product of key expansion.
 
-MixColumns is not performed in the last round of encrpytion as it adds little additional security there. The inverse cypher sees the above operations generally performed in reverse order, with the constant vector in MixColumns being the inverse matrix of that used in encryption. In cypher block chaining (CBC) mode, blocks of data are procedurally encrypted to generate cypherkeys for subsequent block encryption, and the inverse is performed in decryption.
+The inverse cypher sees the above operations generally performed in reverse order, with the constant vector in MixColumns being the inverse matrix of that used in encryption. In cypher block chaining (CBC), blocks of data are procedurally encrypted to generate cypherkeys for subsequent block encryption, and the inverse is performed in decryption.
 
 Detailed mathematical preliminaries and other specifications may be found in NIST (2001) and Wikipedia (2023).
 
